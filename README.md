@@ -1,16 +1,110 @@
-# React + Vite
+# LuminaMart Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple ecommerce assignment built with React, Redux Toolkit, and DummyJSON APIs.
 
-Currently, two official plugins are available:
+## Deployment URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Live Demo: `https://ecommerce-assignment-vishal.vercel.app/` (example: Vercel/Netlify link)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 7
+- Redux Toolkit + React Redux
+- React Router DOM
+- Axios
+- Tailwind CSS v4
+- Lucide React
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User login with token storage
+- Fetch logged-in user profile on reload
+- Product listing from API
+- Category filter
+- Pagination
+- Add to cart
+- Increase/decrease/remove cart items
+- Cart sidebar with total amount
+- Responsive UI
+- Dark mode toggle
+
+## Installation Steps
+
+1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd ecommerce
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run development server
+
+```bash
+npm run dev
+```
+
+4. Build for production
+
+```bash
+npm run build
+```
+
+5. Preview production build
+
+```bash
+npm run preview
+```
+
+## Folder Structure
+
+```text
+ecommerce/
+  public/
+  src/
+    assets/
+    components/
+      Navbar.jsx
+      ProductCard.jsx
+      cartSidebar.jsx
+    features/
+      auth/
+        authSlice.js
+      cart/
+        cartSlice.js
+      products/
+        productSlice.js
+    pages/
+      Home.jsx
+      Login.jsx
+    redux/
+      store.js
+    App.jsx
+    main.jsx
+    index.css
+  package.json
+  vite.config.js
+  eslint.config.js
+  README.md
+```
+
+## Scripts
+
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run preview` - preview production build
+- `npm run lint` - run ESLint
+
+## API Used
+
+- `https://dummyjson.com/auth/login`
+- `https://dummyjson.com/auth/me`
+- `https://dummyjson.com/products`
+- `https://dummyjson.com/products/category/:category`
+- `https://dummyjson.com/products/categories`
