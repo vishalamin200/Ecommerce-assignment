@@ -4,7 +4,7 @@ A simple ecommerce assignment built with React, Redux Toolkit, and DummyJSON API
 
 ## Deployment URL
 
-- Live Demo: `https://ecommerce-assignment-vishal.vercel.app/` (example: Vercel/Netlify link)
+- Live Demo: https://ecommerce-assignment-vishal.vercel.app/
 
 ## Tech Stack
 
