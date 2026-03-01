@@ -1,4 +1,4 @@
-# LuminaMart Ecommerce
+# Ecommerce Assignment
 
 A simple ecommerce assignment built with React, Redux Toolkit, and DummyJSON APIs.
 
