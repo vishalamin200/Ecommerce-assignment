@@ -34,7 +34,7 @@ A simple ecommerce assignment built with React, Redux Toolkit, and DummyJSON API
 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/vishalamin200/Ecommerce-assignment
 cd ecommerce
 ```
 
@@ -64,34 +64,34 @@ npm run preview
 
 ## Folder Structure
 
-```text
+```
 ecommerce/
-  public/
-  src/
-    assets/
-    components/
-      Navbar.jsx
-      ProductCard.jsx
-      cartSidebar.jsx
-    features/
-      auth/
-        authSlice.js
-      cart/
-        cartSlice.js
-      products/
-        productSlice.js
-    pages/
-      Home.jsx
-      Login.jsx
-    redux/
-      store.js
-    App.jsx
-    main.jsx
-    index.css
-  package.json
-  vite.config.js
-  eslint.config.js
-  README.md
+├── public/
+├── src/
+│   ├── assets/                 # Images, icons, fonts, etc.
+│   ├── components/             # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── CartSidebar.jsx
+│   ├── features/               # Redux feature slices
+│   │   ├── auth/
+│   │   │   └── authSlice.js
+│   │   ├── cart/
+│   │   │   └── cartSlice.js
+│   │   └── products/
+│   │       └── productSlice.js
+│   ├── pages/                  # Application pages
+│   │   ├── Home.jsx
+│   │   └── Login.jsx
+│   ├── redux/                  # Redux store configuration
+│   │   └── store.js
+│   ├── App.jsx                 # Root component
+│   ├── main.jsx                # Application entry point
+│   └── index.css               # Global styles
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
 ```
 
 ## Scripts
